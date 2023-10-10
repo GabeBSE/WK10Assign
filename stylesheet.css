@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(68, 67, 67)
+}
+
+
+/* Optionally, set a specific color for links (if needed) */
+form {
+    color: rgb(0, 255, 115); /* Change to the color you prefer */
+    font-style: italic;
+}
+
+
+h1 {
+    color:rgb(0, 255, 115)
+}
+
+p {
+    color: gold;
+}
+
+/* CSS for the Occasion Date input */
+.occasion-date-input {
+    width: 150px; /* Adjust the width as needed */
+}
+
+table {
+    font-style: italic
+}
+

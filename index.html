@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wk10 Assignment</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+
+
+   
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Gift List</h1>
+        <p>Please enter your name and gift information below:</p>
+        <!-- Form to add a new gift -->
+        <form id="gift-form">
+            <!-- Form inputs (first name, last name, gift details, etc.) -->
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" class="form-control" id="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" class="form-control" id="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="item">Item</label>
+                <input type="text" class="form-control" id="item" required>
+            </div>
+            <div class="form-group">
+                <label for="store-website">Store/Website</label>
+                <input type="text" class="form-control" id="store-website" required>
+            </div>
+            <div class="form-group">
+                <label for="occasion">Occasion</label>
+                <input type="text" class="form-control" id="occasion" required>
+            </div>
+            <div class="form-group">
+                <label for="occasion-date">Occasion Date</label>
+                <input type="date" class="form-control occasion-date-input" id="occasion-date" required>
+            </div>
+            
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="fragile">
+                <label class="form-check-label" for="fragile">Fragile</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="specialty-wrapped">
+                <label class="form-check-label" for="specialty-wrapped">Specialty Wrapped</label>
+            </div>
+            <!-- Submit button to add the gift -->
+            <button type="submit" class="btn btn-primary">Add Gift</button>
+            
+
+        </form>
+        <!-- Bootstrap-styled table -->
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Item</th>
+                    <th>Store/Website</th>
+                    <th>Occasion</th>
+                    <th>Occasion Date</th>
+                    <th>Fragile</th>
+                    <th>Specialty Wrapped</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="gift-list">
+                <!-- Gift list rows will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    
+   
+    <script src="script.js"></script>
+</body>
+</html>
