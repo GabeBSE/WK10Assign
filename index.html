@@ -6,13 +6,14 @@
     <title>Wk10 Assignment</title>
     <!-- Link to Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--Link to my css stylesheet-->
     <link rel="stylesheet" href="stylesheet.css">
 
 
    
 </head>
 <body>
-    <div class="container mt-5">
+    <div class="container mt-5"> <!--Bootstrap container, do not change-->
         <h1>Gift List</h1>
         <p>Please enter your name and gift information below:</p>
         <!-- Form to add a new gift -->
@@ -26,27 +27,32 @@
                 <label for="last-name">Last Name</label>
                 <input type="text" class="form-control" id="last-name" required>
             </div>
+            <!--The desired gift-->
             <div class="form-group">
                 <label for="item">Item</label>
                 <input type="text" class="form-control" id="item" required>
             </div>
+            <!--Where the gift can be purchased-->
             <div class="form-group">
                 <label for="store-website">Store/Website</label>
                 <input type="text" class="form-control" id="store-website" required>
             </div>
+            <!--User will list what occasion the gift is for, birthday, annaversary, Christmas, etc.-->
             <div class="form-group">
                 <label for="occasion">Occasion</label>
                 <input type="text" class="form-control" id="occasion" required>
             </div>
+            <!--Occasion date is to show when the gift must be ready by-->
             <div class="form-group">
                 <label for="occasion-date">Occasion Date</label>
                 <input type="date" class="form-control occasion-date-input" id="occasion-date" required>
             </div>
-            
+            <!--Fragile checkbox option-->
             <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="fragile">
                 <label class="form-check-label" for="fragile">Fragile</label>
             </div>
+            <!--Speacialty Wrapped checkbox option-->
             <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="specialty-wrapped">
                 <label class="form-check-label" for="specialty-wrapped">Specialty Wrapped</label>
@@ -59,7 +65,9 @@
         <!-- Bootstrap-styled table -->
         <table class="table">
             <thead>
-                <tr>
+                <tr>  <!--These below will show up on the table bar. When user enters data and clicks the "Add Gift"
+                        button, all the data entered will show up underneath the table bar placing the data under the
+                        related category-->
                     <th>Name</th>
                     <th>Item</th>
                     <th>Store/Website</th>
@@ -76,7 +84,7 @@
         </table>
     </div>
     
-   
+    <!--Link to my js file-->
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,29 +1,29 @@
-body {
+body { /* background color for webpage*/
     background-color: rgb(68, 67, 67)
 }
 
 
-/* Optionally, set a specific color for links (if needed) */
+/* color and style for the form font*/
 form {
     color: rgb(0, 255, 115); /* Change to the color you prefer */
     font-style: italic;
 }
 
 
-h1 {
+h1 { /*for the "Gift List" header */
     color:rgb(0, 255, 115)
 }
 
-p {
+p { /* This is for the <p> tag*/
     color: gold;
 }
 
 /* CSS for the Occasion Date input */
 .occasion-date-input {
-    width: 150px; /* Adjust the width as needed */
+    width: 150px; /* Adjust the width of the input box */
 }
 
-table {
+table { /* for the table bar font*/
     font-style: italic
 }
 
