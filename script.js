@@ -1,6 +1,6 @@
 // script.js
 
-
+// JS waits for the html page to fully load before running
 document.addEventListener("DOMContentLoaded", function () {
     const giftForm = document.getElementById("gift-form");
     const giftList = document.getElementById("gift-list");
